@@ -4,6 +4,7 @@
 <title>Futinator</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -108,10 +109,55 @@ body {
     width: 100%;
   }
 }
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.instagram {
+  background: #e4405f;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
 </style>
 </head>
 <body>
-
+<div class="icon-bar">
+	<a href="https://twitter.com/FutinatorWebApp" class="twitter"><i class="fa fa-twitter"></i></a> 
+	<a href="https://www.youtube.com/channel/UC_b14lyqkOTRflIUhAhUgtg" class="youtube"><i class="fa fa-youtube"></i></a> 
+	<a href="https://www.instagram.com/futinatorcontact/" class="instagram"><i class="fa fa-instagram"></i></a> 
+</div>
 <div class="header">
   <h1>Futinator</h1>
   <p>Futinator is a powerful extension that helps to handle the FIFA Ultimate Team (FUT) web app easier. Snipe faster than others!</p>
