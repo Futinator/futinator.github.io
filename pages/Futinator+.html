@@ -207,10 +207,37 @@ img.one {
   height: 90%;
   width: 90%;
 }
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
 </style>
 </head>
 <body>
  <a href="../index.html">Go Back</a>
+<!-- <div id="overlay" style="display:block">
+  <div id="text"><font color="white">We are sorry but Futinator + is limited. Capacity is reached. Try again in Fifa 21.</font> </div>
+</div>
+-->
 <h1>Futinator + | Hands-free sniping (Auto version)</h1>
 <p>
 
@@ -220,7 +247,7 @@ img.one {
    <br>In addition to all functionalities of Futinator, there is now also the possibility for hands-free sniping (automated sniping).
 	<br>
 	<ul>
-	<li><b><i><font color="red">Important: Futinator + is limited to 300 people!</font> || 11.04.2020: <font color="green">74 spots left</font></i></b>
+	<li><b><i><font color="red">Important: Futinator + is limited to 300 people!</font> || 22.04.2020: <font color="green">9 spots left</font></i></b>
    </li>
 	</ul>
   <div class="w3-container">
@@ -261,6 +288,7 @@ img.one {
 	<li class="w3-padding-16"><b>Snipe</b> players or consumables</li>
 	<li class="w3-padding-16"><b>Set</b> a price range, to refresh your search requests</li>
 	<li class="w3-padding-16"><b>Flexible settings</b> to avoid captcha</li>
+	<li class="w3-padding-16"><b>Snipe</b> by rating</li>
 	<li class="w3-padding-16"><b>10x</b> faster sniping</li>
 	<li class="w3-padding-16"><b>Optional:</b> send to tranfer list</li>
     <li class="w3-padding-16"><b>Discord</b> Support</li>
@@ -269,7 +297,8 @@ img.one {
       <span class="w3-opacity">one-time (for Fifa 20)</span>
     </li>
     <li class="w3-light-grey w3-padding-24">
-      <button class="w3-button w3-green w3-padding-large" onclick=" window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4JHXVEN9M3JU2&source=url','_blank')">Sign Up</button>
+      <!--<button class="w3-button w3-green w3-padding-large" onclick=" window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4JHXVEN9M3JU2&source=url','_blank')">Sign Up</button>-->
+	  <button class="w3-button w3-green w3-padding-large" onclick=" window.open('https://www.paypal.me/FutinatorApp/25','_blank')">Sign Up</button>
     </li>
   </ul>
 </div>
