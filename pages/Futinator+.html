@@ -235,6 +235,9 @@ img.one {
 	padding:1px 2px;
     vertical-align:top;
 }
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 </style>
 </head>
 <body>
@@ -287,7 +290,7 @@ img.one {
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
   <h3>YT: Futinator + | Hands-free sniping</h3><br>
-  <iframe width="450" height="315" src="https://www.youtube.com/embed/4lPCiFPM2VM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video-container"><iframe width="450" height="315" src="https://www.youtube.com/embed/4lPCiFPM2VM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
   </div>
 </div>
 
