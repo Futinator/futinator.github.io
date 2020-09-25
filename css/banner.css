@@ -4,7 +4,7 @@
  .jumbotron p{margin-bottom:15px;font-size:21px;font-weight:200}
  .jumbotron>hr{border-top-color:#d5d5d5}._container 
  .jumbotron,._container-fluid .jumbotron{padding-right:15px;padding-left:15px;border-radius:6px}
- .jumbotron ._container{max-width:100%}@media screen and (min-width:768px){.jumbotron{padding-top:30px;padding-bottom:30px}._container 
+ .jumbotron ._container{max-width:100%}@media screen and (min-width:768px){.jumbotron{padding-top:10px;padding-bottom:10px}._container 
  .jumbotron,._container-fluid .jumbotron{padding-right:60px;padding-left:60px}.jumbotron .h1,
  .jumbotron h1{font-size:63px}
   ._container{padding-right:40px;padding-left:40px;margin-right:auto;margin-left:auto}@media (min-width:768px){._container{width:750px}}@media (min-width:992px){._container{width:970px}}@media (min-width:1200px){._container{width:1170px}}._container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
