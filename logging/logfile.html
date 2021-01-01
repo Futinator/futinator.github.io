@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Your Futinator log file:</h1>
+<input type="checkbox" id="highlight" name="highlight" value="highlight">
+<label for="highlight"> Highlight sniped/missed entries</label><br>
+<p>
+<i>S=sniped, M=missed</i>
+<p>
+<p>
+<span id="log"></span>
+<script>
+
+
+
+var t_url = decodeURIComponent(window.location.href);
+var split_URL = t_url.split("--,");
+for (i = 1; i < split_URL.length; i++) {
+	var btn = document.createElement("span");   
+	btn.innerHTML = split_URL[i].replace("--","");                   
+	document.getElementById("log").appendChild(btn); 
+
+	var para = document.createElement("BR");                 
+	para.innerHTML = "";                
+	document.getElementById("log").appendChild(para);
+}
+
+
+
+//#################
+//window.history.pushState("", "", '/yourlogfile');
+
+document.getElementById("highlight").addEventListener('change', function () {
+		if(document.getElementById("highlight").checked){
+			
+				const elements = document.querySelectorAll('span');
+
+				elements.forEach( el => {
+					if(el.innerHTML.includes("S!")){
+						//alert(elements[i].innerHTML);
+						el.style.backgroundColor  = "#B3F3CF";
+					}else if(el.innerHTML.includes("M!")){
+						el.style.backgroundColor  = "#ffcccc";
+					}
+				
+				});
+		}	
+		else{
+			const elements = document.querySelectorAll('span');
+
+				elements.forEach( el => {
+					
+						el.style.backgroundColor  = "#fff";
+					
+				
+				});
+		}
+});
+
+</script>
+
+
+</body>
+</html>
