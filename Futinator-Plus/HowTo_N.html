@@ -295,82 +295,64 @@ img {vertical-align: middle; max-width: 100%;}
 </head>
 <body>
 
-<div class="row">
- <!-- 
- <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  -->
-  <div class="main">
-    <div class="_container">
-   <div class="jumbotron">
-    <h1 style="color:green; text-align:center;">How to get Futinator +</h1>      
-   <p style="text-align:center; font-size:30px;">In three simple steps</p>
-  </div>
-	
-	
-		<div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band">
-			<h2 class="w3-wide" style="background-color:#85C1E9";>1. Download Futinator + here:</h2>
-			<p class="w3-justify">
-			<p>
-			<!--<a href="https://futinator-app.de/Futinator-Plus/Futinator-Plus.zip" target="_blank">Download</a>-->
 
-			<button class="btnx" style="color:green; top:10px;" onclick="window.window.open('https://futinator-app.de/Futinator-Plus/Futinator-Plus.zip');"><i class="fa fa-download"></i> Download</button></p>
-			Latest version: 2.0.1.2. (New feature: log file)
-		</div>
+
+
+
+
+<script>
+var kkk = prompt("Please enter your code/email", "Your code/email ...");
+
+//##############################Button SAVE 1
+	function makeHttpObject() {
+	try {
+		return new XMLHttpRequest();
+	} catch (error) {}
+	try {
+		return new ActiveXObject("Msxml2.XMLHTTP");
+	} catch (error) {}
+	try {
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	} catch (error) {}
+
+	throw new Error("Could not create HTTP request object.");
+	}
+
+	var request = makeHttpObject();
+	
+	
+		request.open("GET", "https://futinator-app.de/plus/readonlykeys.php/?w1=" + kkk, true);
+		request.send(null);
 		
-		
-		<div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band">
-			<h2 class="w3-wide" style="background-color:#85C1E9";>2. Unzip the file</h2>
-			<p class="w3-justify">
-			<p>After you have downloaded the file, unzip/extract the file.
-			<br>
-			<br>
-			<i>(Free) Programs for unzipping:</i>
-			<br>
-			Windows: <a href="https://www.7-zip.org/">https://www.7-zip.org/</a>
-			<br>
-			Mac: <a href="https://theunarchiver.com/">https://theunarchiver.com/</a>
-			</p>
-		</div>
-		
-	
-		<div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band">
-			<h2 class="w3-wide" style="background-color:#85C1E9";>3. Add the file to google chrome</h2>
-			<p class="w3-justify">
-			<p>1. Go to Google chrome and click on three dots in the upper right corner.</p>
-			<img src="3dots.png" alt="Activate" style="width:30%;">
-	
-			<p>2. Click on more tools, extensions and enable developer mode in the upper right corner.</p>
-			<img src="devmode.png" alt="Activate" style="width:20%;">
-			<p>3. Click on "Load Unpacked" and select the unziped folder.</p>
-			<img src="loadun.png" alt="Activate" style="width:60%;">
-			<p>4. If the Futinator logo is not visible click on the puzzle icon in the upper right corner (and feel free to pin the app.).</p>
-			<img src="puzzle.png" alt="Activate" style="width:15%;">
-			<p>5. Enter your key in the box and press the "Activate" button.</p>
-			
-			<img src="activate.png" alt="Activate" style="width:70%;">
-		</div>
-		
+		request.onreadystatechange = function () {
+			if (request.readyState == 4) {
 
+				if (request.responseText == "acacac121212") {
+					
+					//document.body.insertAdjacentHTML('beforeend', '<div class="main"> <div class="_container"> <div class="jumbotron"> <h1 style="color:green; text-align:center;">How to get Futinator +</h1> <p style="text-align:center; font-size:30px;">In three simple steps</p> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>1. Download Futinator + here:</h2> <p class="w3-justify"> <p> <a class="btnx" style="color:green; border:3px solid grey; top:10px;" href="https://futinator-app.de/Futinator-Plus/Futinator-Plus.zip"><i class="fa fa-download"></i> Download</a></p> Latest version: 2.0.1.2. (New feature: log file) </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>2. Unzip the file</h2> <p class="w3-justify"> <p>After you have downloaded the file, unzip/extract the file into a folder. </p> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>3. Add the file to google chrome</h2> <p class="w3-justify"> <p>1. Go to Google chrome and click on three dots in the upper right corner.</p> <img src="3dots.png" alt="Activate" style="width:30%;"> <p>2. Click on more tools, extensions and enable developer mode in the upper right corner.</p> <img src="devmode.png" alt="Activate" style="width:20%;"> <p>3. Click on "Load Unpacked" and select the unziped folder with all files inside.</p> <img src="loadun.png" alt="Activate" style="width:60%;"> <p>4. Enter your key in the box and press the "Activate" button.</p> <img src="activate.png" alt="Activate" style="width:70%;"> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> </br> <p class="w3-opacity"><i>Issues or questions? Do not hesitate. Contact Us.</i></p> </div> </div> </div>')
+					document.body.insertAdjacentHTML('beforeend', '<div class="main"> <div class="_container"> <div class="jumbotron"> <h1 style="color:green; text-align:center;">How to get Futinator +</h1> <p style="text-align:center; font-size:30px;">In three simple steps</p> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>1. Download Futinator + here:</h2> <p class="w3-justify"> <p>  <a class="btnx" style="color:green; border:3px solid grey; top:10px;" href="https://futinator-app.de/Futinator-Plus/Futinator-Plus.zip"><i class="fa fa-download"></i> Download</a></p> Latest version: 2.0.1.2. (New feature: log file) </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>2. Unzip the file</h2> <p class="w3-justify"> <p>After you have downloaded the file, unzip/extract the file. <br> <br> <i>(Free) Programs for unzipping:</i> <br> Windows: <a href="https://www.7-zip.org/">https://www.7-zip.org/</a> <br> Mac: <a href="https://theunarchiver.com/">https://theunarchiver.com/</a> </p> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> <h2 class="w3-wide" style="background-color:#85C1E9";>3. Add the file to google chrome</h2> <p class="w3-justify"> <p>1. Go to Google chrome and click on three dots in the upper right corner.</p> <img src="3dots.png" alt="Activate" style="width:30%;"> <p>2. Click on more tools, extensions and enable developer mode in the upper right corner.</p> <img src="devmode.png" alt="Activate" style="width:20%;"> <p>3. Click on "Load Unpacked" and select the unziped folder.</p> <img src="loadun.png" alt="Activate" style="width:60%;"> <p>4. If the Futinator logo is not visible click on the puzzle icon in the upper right corner (and feel free to pin the app.).</p> <img src="puzzle.png" alt="Activate" style="width:15%;"> <p>5. Enter your key in the box and press the "Activate" button.</p> <img src="activate.png" alt="Activate" style="width:70%;"> </div> <div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band"> </br> <p class="w3-opacity"><i>Issues or questions? Do not hesitate. Contact Us.</i></p> </div> </div> </div>')
+
+
+				} else {
+				
+					document.body.insertAdjacentHTML('beforeend', 'Your code is not valid.')
+					setTimeout(function(){ 
+					//window.open('https://futinator.github.io/pages/Futinator+.html', '_blank');
+					window.location.href = "https://futinator.github.io/pages/Futinator+.html";
+					//window.open("https://futinator.github.io/pages/Futinator+.html"); 
+					}, 1000);
+
+
+				}
+
+			}
+
+		};
 
 	
-	<div class="w3-container w3-content w3-center w3-padding-8" style="max-width:800px" id="band">
-		</br>	
-			<p class="w3-opacity"><i>Issues or questions? Do not hesitate. Contact Us.</i></p>
-	</div>
-   </div>
-</div>
+	
+	//#######
 
-
-
+</script>
 </body>
 </html>
